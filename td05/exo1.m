@@ -26,7 +26,7 @@ for i=1:it
     i
     wprec=w;
     %w=perceptron(wprec,c1,c2,coef);
-    w=perceptron(wprec,TrainC1,TrainC2,coef);
+    w=perceptron(wprec,TestC1,TestC2,coef);
     if(norm(w-wprec)<=0.01)
         break
     end
